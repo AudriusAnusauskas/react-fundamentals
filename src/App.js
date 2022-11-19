@@ -1,17 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
-
-const ChildrenWithTitle = ({ children, title }) => {
-  return (
-    <div>
-      <h2>{title}</h2>;{children}
-    </div>
-  );
-};
-
-function FirstReactComponent() {
-  return <p>I am new here</p>;
-}
+import { FirstReactComponent } from "./FirstReactComponent";
+import ChildrenWithTitle from "./ChildrenWithTitle";
 
 function App() {
   return (
