@@ -22,6 +22,9 @@ const RenderingLists = ({ fullList, filteredList }) => {
     list = listForRender.map(
       (item) => item.value % 2 === 0 && <li>{item.name}</li>
     );
+    //   list = listForRender
+    //     .filter((item) => item.value % 2 === 0)
+    //     .map((item) => <li>{item.name}</li>);
   }
   return (
     <section>
