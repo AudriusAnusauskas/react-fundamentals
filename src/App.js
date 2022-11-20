@@ -11,8 +11,8 @@ function App() {
       <p>You look beautiful</p>
       <FirstReactComponent />
       <ChildrenWithTitle title="i'm title">i'm children</ChildrenWithTitle>
-      <ConditionalRenderingComponent isBlue="true" />
-      <ConditionalRenderingComponent />
+      <ConditionalRenderingComponent isBlue={true} />
+      <ConditionalRenderingComponent isBlue={false} />
     </div>
   );
 }
