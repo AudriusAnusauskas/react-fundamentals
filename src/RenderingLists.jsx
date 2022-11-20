@@ -10,15 +10,15 @@ const listForRender = [
   { value: 8, name: "List item value 8" },
 ];
 
-const RenderingLists = ({ fullList, filteredList }) => {
+const RenderingLists = ({ fullList, filteredList, children }) => {
   let list;
-  let title;
+  // let title;
   if (fullList) {
-    title = "Full List";
+    // title = "Full List";
     list = listForRender.map((item) => <li>{item.name}</li>);
   }
   if (filteredList) {
-    title = "Filtered List";
+    // title = "Filtered List";
     list = listForRender.map(
       (item) => item.value % 2 === 0 && <li>{item.name}</li>
     );
@@ -28,7 +28,7 @@ const RenderingLists = ({ fullList, filteredList }) => {
   }
   return (
     <section>
-      <h2>{title}</h2>
+      <h2>{children}</h2>
       <ul>{list}</ul>
     </section>
   );

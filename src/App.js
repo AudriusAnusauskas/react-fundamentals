@@ -14,8 +14,8 @@ function App() {
       <ChildrenWithTitle title="i'm title">i'm children</ChildrenWithTitle>
       <ConditionalRenderingComponent isBlue={true} />
       <ConditionalRenderingComponent isBlue={false} />
-      <RenderingLists fullList={true} />
-      <RenderingLists filteredList={true} />
+      <RenderingLists fullList={true}>Full List111</RenderingLists>
+      <RenderingLists filteredList={true}>Filtered List111</RenderingLists>
     </div>
   );
 }
