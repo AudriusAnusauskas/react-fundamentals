@@ -1,21 +1,11 @@
 import logo from "./logo.svg";
 import "./App.css";
-import { FirstReactComponent } from "./FirstReactComponent";
-import ChildrenWithTitle from "./ChildrenWithTitle";
-import ConditionalRenderingComponent from "./ConditionalRenderingComponent";
-import RenderingLists from "./RenderingLists";
+import InteractionEvents33 from "./InteractionEvents33";
 
 function App() {
   return (
     <div>
-      <h1>Hello world</h1>
-      <p>You look beautiful</p>
-      <FirstReactComponent />
-      <ChildrenWithTitle title="i'm title">i'm children</ChildrenWithTitle>
-      <ConditionalRenderingComponent isBlue={true} />
-      <ConditionalRenderingComponent isBlue={false} />
-      <RenderingLists fullList={true}>Full List111</RenderingLists>
-      <RenderingLists filteredList={true}>Filtered List111</RenderingLists>
+      <InteractionEvents33 />
     </div>
   );
 }
